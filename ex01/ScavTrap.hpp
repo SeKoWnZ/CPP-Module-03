@@ -6,7 +6,7 @@
 /*   By: jose-gon <jose-gon@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 18:45:54 by jose-gon          #+#    #+#             */
-/*   Updated: 2025/04/23 18:55:26 by jose-gon         ###   ########.fr       */
+/*   Updated: 2025/04/23 19:34:08 by jose-gon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ class ScavTrap : public ClapTrap
 		ScavTrap(const ScavTrap &other);
 		ScavTrap &operator=(const ScavTrap &other);
 		~ScavTrap();
+		void attack(const std::string& target);
 		void guardGate();
 };
 
