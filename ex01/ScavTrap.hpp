@@ -1,23 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   ScavTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jose-gon <jose-gon@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/03 18:03:19 by jose-gon          #+#    #+#             */
-/*   Updated: 2025/04/15 18:41:18 by jose-gon         ###   ########.fr       */
+/*   Created: 2025/04/15 18:45:54 by jose-gon          #+#    #+#             */
+/*   Updated: 2025/04/23 18:55:26 by jose-gon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef SCAVTRAP_HPP
+# define SCAVTRAP_HPP
+
 #include <ClapTrap.hpp>
 
-int main()
+class ScavTrap : public ClapTrap
 {
-	ClapTrap	a("Crappy");
-	ClapTrap	b(a);
+	private:
+		bool	_gateKeeper;
+	public:
+		ScavTrap();
+		ScavTrap(const std::string str);
+		ScavTrap(const ScavTrap &other);
+		ScavTrap &operator=(const ScavTrap &other);
+		~ScavTrap();
+		void guardGate();
+};
 
-	a.attack("Trappy");
-	b.takeDamage(5);
-	b.beRepaired(5);
-}
+#endif
