@@ -5,12 +5,12 @@
 #                                                     +:+ +:+         +:+      #
 #    By: jose-gon <jose-gon@student.42malaga.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/04/15 18:43:42 by jose-gon          #+#    #+#              #
-#    Updated: 2025/04/29 17:44:35 by jose-gon         ###   ########.fr        #
+#    Created: 2025/04/23 19:21:54 by jose-gon          #+#    #+#              #
+#    Updated: 2025/04/29 17:46:07 by jose-gon         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = ScavTrap
+NAME = FragTrap
 
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 
@@ -18,7 +18,7 @@ SRC_DIR = src
 OBJ_DIR = obj
 INC_DIR = ./include
 
-FILES = main.cpp ClapTrap.cpp ScavTrap.cpp
+FILES = main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp
 OBJ_FILES = $(addprefix $(OBJ_DIR)/, $(FILES:.cpp=.o))
 
 all : $(NAME)

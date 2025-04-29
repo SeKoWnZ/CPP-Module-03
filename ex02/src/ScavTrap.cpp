@@ -6,7 +6,7 @@
 /*   By: jose-gon <jose-gon@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 18:46:00 by jose-gon          #+#    #+#             */
-/*   Updated: 2025/04/23 19:32:24 by jose-gon         ###   ########.fr       */
+/*   Updated: 2025/04/28 22:10:32 by jose-gon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,11 @@ ScavTrap &ScavTrap::operator=(const ScavTrap &other)
 	return *this;
 }
 
+ScavTrap::~ScavTrap()
+{
+	std::cout << _name << " -ScavTrap Destructor called" << std::endl;
+}
+
 void	ScavTrap::attack(const std::string& target)
 {
 	if (_hitPoints <= 0)
@@ -67,11 +72,6 @@ void	ScavTrap::attack(const std::string& target)
 		std::cout << "ScavTrap " << _name << " attacks " << target << ", causing " << _attackDamage << " points of damage!" << std::endl;
 		_energyPoints--;
 	}
-}
-
-ScavTrap::~ScavTrap()
-{
-	std::cout << _name << " -ScavTrap Destructor called" << std::endl;
 }
 
 void	ScavTrap::guardGate()
