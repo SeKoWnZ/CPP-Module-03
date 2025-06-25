@@ -6,7 +6,7 @@
 /*   By: jose-gon <jose-gon@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/21 17:48:30 by jose-gon          #+#    #+#             */
-/*   Updated: 2025/04/28 22:25:02 by jose-gon         ###   ########.fr       */
+/*   Updated: 2025/06/25 16:47:05 by jose-gon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 
 int main()
 {
-	std::cout << "### TESTING CLAPTRAP ###\n" << std::endl;
+	std::cout << "### TESTING CLAPTRAP ###" << std::endl << std::endl;
 	{
 		std::cout << "Constructing" << std::endl;
 		ClapTrap a("AlphaClap");
@@ -34,7 +34,7 @@ int main()
 		b.beRepaired(3);
 		std::cout << "Deconstructing" << std::endl;
 	}
-	std::cout << "\n\n### TESTING SCAVTRAP ###\n" << std::endl;
+	std::cout << std::endl << std::endl << "### TESTING SCAVTRAP ###" << std::endl << std::endl;
 	{
 		std::cout << "Constructing" << std::endl;
 		ScavTrap c("KappaScav");
@@ -53,7 +53,7 @@ int main()
 		d.attack("ScavTrap-clone");
 		std::cout << "Deconstructing" << std::endl;
 	}
-	std::cout << "\n\n### TESTING FRAGTRAP ###\n" << std::endl;
+	std::cout << std::endl << std::endl << "### TESTING FRAGTRAP ###" << std::endl << std::endl;
 	{
 		std::cout << "Constructing" << std::endl;
 		FragTrap e("OmegaFrag");
